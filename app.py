@@ -262,8 +262,8 @@ if not st.session_state.logged_in:
         )
 
         tab1, tab2 = st.tabs([
-            "🔐 Login",
-            "📝 Register"
+            "Login",
+            "Register"
         ])
 
     # ========================================================
@@ -272,7 +272,7 @@ if not st.session_state.logged_in:
 
     with tab1:
 
-        st.subheader("🔐 Login")
+        st.subheader("Login")
 
         email = st.text_input(
             "Email",
@@ -322,7 +322,7 @@ if not st.session_state.logged_in:
 
     with tab2:
 
-        st.subheader("📝 Create Account")
+        st.subheader("Create Account")
 
         name = st.text_input(
             "Full Name",
