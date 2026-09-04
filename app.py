@@ -75,7 +75,20 @@ st.markdown("""
     border: 1px solid #dddddd;
     margin-bottom: 15px;
 }
+/* Hide Streamlit bottom-right controls */
+[data-testid="stStatusWidget"] {
+    display: none;
+}
 
+/* Hide fullscreen button */
+button[title="View fullscreen"] {
+    display: none;
+}
+
+/* Hide "Made with Streamlit" footer */
+footer {
+    visibility: hidden;
+}
 </style>
 """, unsafe_allow_html=True)
 
